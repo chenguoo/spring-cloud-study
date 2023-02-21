@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.nooyi</groupId>
+        <artifactId>spring-cloud-study</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>spring-cloud-study-gateway</artifactId>
+    <name>spring-cloud-study-gateway</name>
+    <url>http://maven.apache.org</url>
+    <modules>
+        <module>hello-gateway</module>
+        <module>provider-hello</module>
+        <module>common</module>
+        <module>gateway-by-loadbalance</module>
+        <module>gateway-nacos-config</module>
+        <module>gateway-by-code</module>
+    </modules>
+    <packaging>pom</packaging>
+</project>
