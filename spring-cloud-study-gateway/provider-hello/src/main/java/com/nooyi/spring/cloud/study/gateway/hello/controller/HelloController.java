@@ -26,6 +26,6 @@ public class HelloController {
      */
     @GetMapping("/str")
     public String helloStr() {
-        return Constants.HELLO_PREFIX + ", " + dateStr();
+        return Constants.HELLO_PREFIX + ", now: " + dateStr();
     }
 }
