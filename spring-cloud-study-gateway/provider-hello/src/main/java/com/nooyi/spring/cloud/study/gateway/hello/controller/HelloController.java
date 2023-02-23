@@ -1,9 +1,7 @@
 package com.nooyi.spring.cloud.study.gateway.hello.controller;
 
 import com.nooyi.common.Constants;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -26,6 +24,15 @@ public class HelloController {
      */
     @GetMapping("/str")
     public String helloStr() {
-        return Constants.HELLO_PREFIX + ", now: " + dateStr();
+        return Constants.HELLO_PREFIX + ", " + dateStr();
     }
+    @RequestMapping(value = "/account/{id}", method = RequestMethod.GET)
+    public String account(@PathVariable("id") int id) throws InterruptedException {
+        if(1==id) {
+            Thread.sleep(500);
+        }
+
+        return Constants.ACCOUNT_PREFIX +", "+ dateStr();
+    }
+
 }

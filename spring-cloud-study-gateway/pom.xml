@@ -17,6 +17,7 @@
         <module>gateway-nacos-config</module>
         <module>gateway-by-code</module>
         <module>gateway-dynamic-by-nacos</module>
+        <module>circuitbreaker-gateway</module>
     </modules>
     <packaging>pom</packaging>
 </project>
